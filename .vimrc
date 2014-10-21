@@ -17,6 +17,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 	
 		"NeoBundle"jiangmiao/auto-pairs.git"
 		NeoBundle "scrooloose/syntastic.git"
+		NeoBundle "t9md/vim-quickhl.git"
 		NeoBundle "myusuf3/numbers.vim.git"
 		NeoBundle "vim-scripts/ZoomWin.git"
 		NeoBundle "Valloric/YouCompleteMe.git"
@@ -96,6 +97,13 @@ set smartcase
 
 "colorscheme herald
 
+" space-m to highlight a word. space-M to reset 
+nmap <Space>m <Plug>(quickhl-manual-this)
+xmap <Space>m <Plug>(quickhl-manual-this)
+nmap <Space>M <Plug>(quickhl-manual-reset)
+xmap <Space>M <Plug>(quickhl-manual-reset)
+
+nmap <Space>j <Plug>(quickhl-cword-toggle)
 
 " Enter newlines without entering insert mode 
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
