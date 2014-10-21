@@ -17,6 +17,8 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 	
 		"NeoBundle"jiangmiao/auto-pairs.git"
 		NeoBundle "scrooloose/syntastic.git"
+		NeoBundle "jaxbot/semantic-highlight.vim"
+		NeoBundle "octol/vim-cpp-enhanced-highlight.git"	
 		NeoBundle "t9md/vim-quickhl.git"
 		NeoBundle "myusuf3/numbers.vim.git"
 		NeoBundle "vim-scripts/ZoomWin.git"
@@ -104,6 +106,8 @@ nmap <Space>M <Plug>(quickhl-manual-reset)
 xmap <Space>M <Plug>(quickhl-manual-reset)
 
 nmap <Space>j <Plug>(quickhl-cword-toggle)
+
+nnoremap <Space>] :SemanticHighlightToggle<cr>
 
 " Enter newlines without entering insert mode 
 " http://vim.wikia.com/wiki/Insert_newline_without_entering_insert_mode
