@@ -42,4 +42,5 @@ which I included also in this repo since I changed it minimally. I usually keep 
 
 "  :let i=1 | g/abc/s//\='xyz_'.i/ | let i=i+1  "
 
-
+^found from
+http://vim.wikia.com/wiki/Making_a_list_of_numbers
