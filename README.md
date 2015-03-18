@@ -38,5 +38,8 @@ To generate ctags, enter following at command line, without quotes:
 which I included also in this repo since I changed it minimally. I usually keep it in my home directory, right next to the .vimrc
 
 
+-I use the following regex command in vim to makie incrementing lists of things (xyz_1,xyz_2,...):
+
+"  :let i=1 | g/abc/s//\='xyz_'.i/ | let i=i+1  "
 
 
