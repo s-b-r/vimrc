@@ -44,3 +44,8 @@ which I included also in this repo since I changed it minimally. I usually keep 
 
 ^found from
 http://vim.wikia.com/wiki/Making_a_list_of_numbers
+
+
+-I use the following to replace an example word with a rotating cycle of options
+
+.,$s/example/\=RotateSubst([‘option0’, ‘option1’, ‘option2’, ‘option 3’])/gc

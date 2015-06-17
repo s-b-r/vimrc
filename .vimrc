@@ -1,4 +1,5 @@
 
+
 "plugin manager
 
 filetype off 
@@ -10,7 +11,8 @@ if has('vim_starting')
 		silent execute '!git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim'
 	endif
 endif
-call neobundle#rc(expand('~/.vim/bundle/'))
+"DEPRECATED call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
 		NeoBundleFetch "Shougo/neobundle.vim"
 
 	"	list of plugins, some commented out due to bugs
@@ -42,6 +44,7 @@ call neobundle#rc(expand('~/.vim/bundle/'))
 		NeoBundle "davidhalter/jedi-vim.git"
 		NeoBundle "scrooloose/nerdtree.git" 
 		"NeoBundle"Shougo/neocomplete.vim.git" 
+call neobundle#end()		
 		NeoBundleCheck
 		filetype plugin indent on
 
